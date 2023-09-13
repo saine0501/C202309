@@ -1,8 +1,8 @@
 # include <stdio.h>
 
 int main(void) {
-	const int YEAR = 1972;
-	printf("C ì–¸ì–´ê°€ ë°œí‘œëœ ì—°ë„: %d\n", YEAR);
-	// YEAR = 1973;
+	const int YEAR = 1972; // const ÇÑÁ¤ÀÚ¸¦ ÀÌ¿ëÇØ »ó¼ö YEAR ¼±¾ğ
+	printf("C ¾ğ¾î°¡ ¹ßÇ¥µÈ ¿¬µµ: %d\n", YEAR); // YEAR °ª 1972 Ãâ·Â
+	// YEAR = 1973; »ó¼ö º¯°æ ½Ãµµ·Î ¿¡·¯ ¹ß»ı
 	return 0;
 }
