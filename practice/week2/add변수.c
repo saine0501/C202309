@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main(void){
-	int add = 3 + 7; // add º¯¼ö¿¡ 3 + 7 °ªÀ» ÀúÀå
+	int add = 3 + 7; // add ë³€ìˆ˜ì— 3 + 7 ê°’ì„ ì €ì¥
 	return 0;
 }
