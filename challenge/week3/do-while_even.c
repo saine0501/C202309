@@ -8,7 +8,7 @@ int main(void) {
 			continue;
 		}
 		printf("%d Hello World!\n", i); // i 값과 Hello World 출력
-	} while (i < 10);
+	} while (i < 10); // 조건, i < 10 이 거짓이 되면 종료
 
 	return 0;
 }
