@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
-	int i = 0; // º¯¼ö i ¼±¾ð
-	while (i < 10) { // i < 10 ÀÌ trueÀÎ °æ¿ì ¹Ýº¹¹® ½ÇÇà
-		i++; // iÀÇ Å©±â¸¦ 1 Áõ°¡
-		if (i % 2 == 0) { // i°¡ Â¦¼öÀÌ¸é ¹Ýº¹¹® Ã³À½À¸·Î
+	int i = 0; // ë³€ìˆ˜ i ì„ ì–¸
+	do {
+		i++; // iì˜ í¬ê¸°ë¥¼ 1 ì¦ê°€
+		if (i % 2 == 0) { // iê°€ ì§ìˆ˜ì´ë©´ ë°˜ë³µë¬¸ ì²˜ìŒìœ¼ë¡œ
 			continue;
 		}
-		printf("%d Hello World!\n", i); // i °ª°ú Hello World Ãâ·Â
-	}
+		printf("%d Hello World!\n", i); // i ê°’ê³¼ Hello World ì¶œë ¥
+	} while (i < 10);
+
 	return 0;
 }
