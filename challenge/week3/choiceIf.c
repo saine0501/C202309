@@ -1,31 +1,31 @@
 #include <stdio.h>
 
 int main() {
-	int choice; // choice º¯¼ö ¼±¾ð
+	int choice; // choice ë³€ìˆ˜ ì„ ì–¸
 
-	printf("1. ÆÄÀÏ ÀúÀå\n");
-	printf("2. ÀúÀå ¾øÀÌ ´Ý±â\n");
-	printf("3. Á¾·á\n");
-	scanf_s("%d", &choice); // »ç¿ëÀÚ·ÎºÎÅÍ choice º¯¼öÀÇ °ª ÀÔ·Â¹Þ±â
+	printf("1. íŒŒì¼ ì €ìž¥\n");
+	printf("2. ì €ìž¥ ì—†ì´ ë‹«ê¸°\n");
+	printf("3. ì¢…ë£Œ\n");
+	scanf_s("%d", &choice); // ì‚¬ìš©ìžë¡œë¶€í„° choice ë³€ìˆ˜ì˜ ê°’ ìž…ë ¥ë°›ê¸°
 
-	// »ç¿ëÀÚ°¡ 1À» ÀÔ·ÂÇÏ¸é "ÆÄÀÏÀ» ÀúÀåÇÕ´Ï´Ù." Ãâ·Â
+	// ì‚¬ìš©ìžê°€ 1ì„ ìž…ë ¥í•˜ë©´ "íŒŒì¼ì„ ì €ìž¥í•©ë‹ˆë‹¤." ì¶œë ¥
 	if (choice == 1) { 
-		printf("ÆÄÀÏÀ» ÀúÀåÇÕ´Ï´Ù.");
+		printf("íŒŒì¼ì„ ì €ìž¥í•©ë‹ˆë‹¤.\n");
 	}
 
-	// »ç¿ëÀÚ°¡ 2¸¦ ÀÔ·ÂÇÏ¸é "ÀúÀå ¾øÀÌ ´Ý½À´Ï´Ù." Ãâ·Â
+	// ì‚¬ìš©ìžê°€ 2ë¥¼ ìž…ë ¥í•˜ë©´ "ì €ìž¥ ì—†ì´ ë‹«ìŠµë‹ˆë‹¤." ì¶œë ¥
 	else if (choice == 2) { 
-		printf("ÀúÀå ¾øÀÌ ´Ý½À´Ï´Ù.");
+		printf("ì €ìž¥ ì—†ì´ ë‹«ìŠµë‹ˆë‹¤.\n");
 	}
 
-	// »ç¿ëÀÚ°¡ 1À» ÀÔ·ÂÇÏ¸é "Á¾·áÇÕ´Ï´Ù." Ãâ·Â
+	// ì‚¬ìš©ìžê°€ 3ì„ ìž…ë ¥í•˜ë©´ "ì¢…ë£Œí•©ë‹ˆë‹¤." ì¶œë ¥
 	else if (choice == 3) { 
-		printf("Á¾·áÇÕ´Ï´Ù.");
+		printf("ì¢…ë£Œí•©ë‹ˆë‹¤.\n");
 	}
 
-	// »ç¿ëÀÚ°¡ ÁöÁ¤µÈ °ªÀÌ ¾Æ´Ñ ´Ù¸¥ °ªÀ» ÀÔ·ÂÇÏ¸é "Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù." Ãâ·Â
+	// ì‚¬ìš©ìžê°€ ì§€ì •ëœ ê°’ì´ ì•„ë‹Œ ë‹¤ë¥¸ ê°’ì„ ìž…ë ¥í•˜ë©´ "ìž˜ëª» ìž…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤." ì¶œë ¥
 	else {
-		printf("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+		printf("ìž˜ëª» ìž…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.\n");
 	}
 	return 0;
 }
