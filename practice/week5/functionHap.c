@@ -2,7 +2,7 @@
 
 int hapf(int value); // 함수 원형 선언
 
-void(main)()
+int (main)()
 {
 	printf("1부터 10까지의 합은 %d\n", hapf(10)); // hap(10) 호출
 	printf("1부터 100까지의 합은 %d\n", hapf(100)); // hap(100) 호출
