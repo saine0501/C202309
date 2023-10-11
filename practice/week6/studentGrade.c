@@ -1,47 +1,47 @@
 #include <stdio.h>
-#define STUDENTS 5 // ÄÄÆÄÀÏ ½ÃÁ¡¿¡ °áÁ¤µÇ´Â »ó¼ö STUDENTS 5
+#define STUDENTS 5 // ì»´íŒŒì¼ ì‹œì ì— ê²°ì •ë˜ëŠ” ìƒìˆ˜ STUDENTS 5
 
-void classifyStudents(int scores[], char targetGrade) { // ÇÔ¼ö classifyStudents ¼±¾ğ
-	printf("ÇĞ»ı ¼ºÀû ºĞ·ù:\n");
-	char grade = ' '; // ¹®ÀÚÇü º¯¼ö grade ¼±¾ğ ¹× ÃÊ±âÈ­
-	for (int i = 0; i < STUDENTS; i++) { // i°¡ »ó¼ö STUDENTSÀÇ °ªÀÎ 5º¸´Ù ÀÛÀ» ¶§ ¹İº¹
+void classifyStudents(int scores[], char targetGrade) { // í•¨ìˆ˜ classifyStudents ì •ì˜
+	printf("í•™ìƒ ì„±ì  ë¶„ë¥˜:\n");
+	char grade = ' '; // ë¬¸ìí˜• ë³€ìˆ˜ grade ì„ ì–¸ ë° ì´ˆê¸°í™”
+	for (int i = 0; i < STUDENTS; i++) { // iê°€ ìƒìˆ˜ STUDENTSì˜ ê°’ì¸ 5ë³´ë‹¤ ì‘ì„ ë•Œ ë°˜ë³µ
 		if (scores[i] >= 90) {
-			grade = 'A'; // scores[i]ÀÇ °ªÀÌ 90 ÀÌ»óÀÌ¸é A
+			grade = 'A'; // scores[i]ì˜ ê°’ì´ 90 ì´ìƒì´ë©´ A
 		}
 		else if (scores[i] >= 80) { 
-			grade = 'B'; // scores[i]ÀÇ °ªÀÌ 80 ÀÌ»óÀÌ¸é B
+			grade = 'B'; // scores[i]ì˜ ê°’ì´ 80 ì´ìƒì´ë©´ B
 		}
 		else if (scores[i] >= 70) {
-			grade = 'C'; // scores[i]ÀÇ °ªÀÌ 70 ÀÌ»óÀÌ¸é C
+			grade = 'C'; // scores[i]ì˜ ê°’ì´ 70 ì´ìƒì´ë©´ C
 		}
 		else if (scores[i] >= 60) {
-			grade = 'D'; // scores[i]ÀÇ °ªÀÌ 60 ÀÌ»óÀÌ¸é D
+			grade = 'D'; // scores[i]ì˜ ê°’ì´ 60 ì´ìƒì´ë©´ D
 		}
 		else {
-			grade = 'F'; // ±× ¿ÜÀÇ °æ¿ì´Â F
+			grade = 'F'; // ê·¸ ì™¸ì˜ ê²½ìš°ëŠ” F
 		}
 
-		if (targetGrade == grade) { // ÀÔ·Â¹ŞÀº targetGradeÀÇ °ªÀÌ ÇĞ»ıÀÇ ¼ºÀû°ú °°Àº °æ¿ì
-			printf("%d ÇĞ»ıÀº %c Á¡¼ö¸¦ ¹Ş¾Ò½À´Ï´Ù.", i + 1, targetGrade);
+		if (targetGrade == grade) { // ì…ë ¥ë°›ì€ targetGradeì˜ ê°’ì´ í•™ìƒì˜ ì„±ì ê³¼ ê°™ì€ ê²½ìš°
+			printf("%d í•™ìƒì€ %c ì ìˆ˜ë¥¼ ë°›ì•˜ìŠµë‹ˆë‹¤.", i + 1, targetGrade);
 		}
 	}
 }
 
 int main() {
-	int scores[STUDENTS]; // int¸¦ °ªÀ¸·Î ¹Ş´Â ¹è¿­ ¼±¾ğ
+	int scores[STUDENTS]; // intë¥¼ ê°’ìœ¼ë¡œ ë°›ëŠ” ë°°ì—´ ì„ ì–¸
 
-	for (int i = 0; i < STUDENTS; i++) { // i°¡ »ó¼ö STUDENTSÀÇ °ªÀÎ 5º¸´Ù ÀÛÀ» ¶§ ¹İº¹
-		printf("ÇĞ»ı %dÀÇ ¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä: ", i + 1);
-		scanf_s("%d", &scores[i]); // ÇĞ»ıÀÇ ¼ºÀû(int)À» ¹è¿­·Î ÀÔ·Â¹Ş±â
+	for (int i = 0; i < STUDENTS; i++) { // iê°€ ìƒìˆ˜ STUDENTSì˜ ê°’ì¸ 5ë³´ë‹¤ ì‘ì„ ë•Œ ë°˜ë³µ
+		printf("í•™ìƒ %dì˜ ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš”: ", i + 1);
+		scanf_s("%d", &scores[i]); // í•™ìƒì˜ ì„±ì (int)ì„ ë°°ì—´ë¡œ ì…ë ¥ë°›ê¸°
 	}
 
-	char ch = getchar(); // ¹öÆÛ ÀÓ½Ã ÀúÀå º¯¼ö
+	char ch = getchar(); // ë²„í¼ ì„ì‹œ ì €ì¥ ë³€ìˆ˜
 
-	char target; // ¹®ÀÚÇü º¯¼ö char ¼±¾ğ
-	printf("Æ¯Á¤ Á¡¼ö (A,B,C,D,F)¸¦ ÀÔ·ÂÇÏ½Ã¿À");
-	scanf_s("%c", &target, 1); // Ã£°íÀÚ ÇÏ´Â ¼ºÀû °ª ÀÔ·Â¹Ş±â
+	char target; // ë¬¸ìí˜• ë³€ìˆ˜ char ì„ ì–¸
+	printf("íŠ¹ì • ì ìˆ˜ (A,B,C,D,F)ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
+	scanf_s("%c", &target, 1); // ì°¾ê³ ì í•˜ëŠ” ì„±ì  ê°’ ì…ë ¥ë°›ê¸°
 
-	classifyStudents(scores, target); // classifyStudents ÇÔ¼ö È£Ãâ
+	classifyStudents(scores, target); // classifyStudents í•¨ìˆ˜ í˜¸ì¶œ
 
 	return 0;
 }
