@@ -1,21 +1,23 @@
 #include <stdio.h>
 
-int hapf(int value); // ÇÔ¼ö ¿øÇü ¼±¾ğ
+int hapf(int value); // í•¨ìˆ˜ ì›í˜• ì„ ì–¸
 
 int (main)()
 {
-	printf("1ºÎÅÍ 10±îÁöÀÇ ÇÕÀº %d\n", hapf(10)); // hap(10) È£Ãâ
-	printf("1ºÎÅÍ 100±îÁöÀÇ ÇÕÀº %d\n", hapf(100)); // hap(100) È£Ãâ
-	printf("1ºÎÅÍ 1000±îÁöÀÇ ÇÕÀº %d\n", hapf(1000)); // hap(1000) È£Ãâ
+	printf("1ë¶€í„° 10ê¹Œì§€ì˜ í•©ì€ %d\n", hapf(10)); // hap(10) í˜¸ì¶œ
+	printf("1ë¶€í„° 100ê¹Œì§€ì˜ í•©ì€ %d\n", hapf(100)); // hap(100) í˜¸ì¶œ
+	printf("1ë¶€í„° 1000ê¹Œì§€ì˜ í•©ì€ %d\n", hapf(1000)); // hap(1000) í˜¸ì¶œ
+
+	return 0;
 }
 
-int hapf(int value) { // ÇÔ¼ö hapf Á¤ÀÇ (Header)
-	int i = 1; // º¯¼ö i ¼±¾ğ ¹× ÃÊ±âÈ­
-	int hap = 0; // º¯¼ö hap ¼±¾ğ ¹× ÃÊ±âÈ­
+int hapf(int value) { // í•¨ìˆ˜ hapf ì •ì˜ (Header)
+	int i = 1; // ë³€ìˆ˜ i ì„ ì–¸ ë° ì´ˆê¸°í™”
+	int hap = 0; // ë³€ìˆ˜ hap ì„ ì–¸ ë° ì´ˆê¸°í™”
 
-	while (i <= value) { // ÇÔ¼ö hapf Á¤ÀÇ (Body), i <= value °¡ ÂüÀÎ µ¿¾È ¹İº¹
-		hap = hap + i; // hap¿¡ i °ª ´õÇÏ±â
-		i++; // i Áõ°¡
+	while (i <= value) { // í•¨ìˆ˜ hapf ì •ì˜ (Body), i <= value ê°€ ì°¸ì¸ ë™ì•ˆ ë°˜ë³µ
+		hap = hap + i; // hapì— i ê°’ ë”í•˜ê¸°
+		i++; // i ì¦ê°€
 	}
-	return hap; // º¯¼ö hap ¹İÈ¯
+	return hap; // ë³€ìˆ˜ hap ë°˜í™˜
 }
