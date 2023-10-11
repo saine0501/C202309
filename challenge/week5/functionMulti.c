@@ -1,21 +1,23 @@
 #include <stdio.h>
 
-long multiF(int value); // ÇÔ¼ö ¿øÇü ¼±¾ğ
+long multiF(int value); // í•¨ìˆ˜ ì›í˜• ì„ ì–¸
 
 int (main)()
 {
-	printf("1ºÎÅÍ 2±îÁöÀÇ °öÀº %ld\n", multiF(2)); // multiF(2) È£Ãâ
-	printf("1ºÎÅÍ 3±îÁöÀÇ °öÀº %ld\n", multiF(3)); // multiF(3) È£Ãâ
-	printf("1ºÎÅÍ 5±îÁöÀÇ °öÀº %ld\n", multiF(5)); // multiF(5) È£Ãâ
+	printf("1ë¶€í„° 2ê¹Œì§€ì˜ ê³±ì€ %ld\n", multiF(2)); // multiF(2) í˜¸ì¶œ
+	printf("1ë¶€í„° 3ê¹Œì§€ì˜ ê³±ì€ %ld\n", multiF(3)); // multiF(3) í˜¸ì¶œ
+	printf("1ë¶€í„° 5ê¹Œì§€ì˜ ê³±ì€ %ld\n", multiF(5)); // multiF(5) í˜¸ì¶œ
+
+	return 0;
 }
 
-long multiF(int value) { // ÇÔ¼ö multiF Á¤ÀÇ (Header)
-	int i = 1; // º¯¼ö i ¼±¾ğ ¹× ÃÊ±âÈ­
-	long multi = 1; // º¯¼ö multi ¼±¾ğ ¹× ÃÊ±âÈ­
+long multiF(int value) { // í•¨ìˆ˜ multiF ì •ì˜ (Header)
+	int i = 1; // ë³€ìˆ˜ i ì„ ì–¸ ë° ì´ˆê¸°í™”
+	long multi = 1; // ë³€ìˆ˜ multi ì„ ì–¸ ë° ì´ˆê¸°í™”
 
-	while (i <= value) { // ÇÔ¼ö multiF Á¤ÀÇ (Body), i <= value °¡ ÂüÀÎ µ¿¾È ¹İº¹
-		multi = multi * i; // multi¿¡ i °ª °öÇÏ±â
-		i++; // i Áõ°¡
+	while (i <= value) { // í•¨ìˆ˜ multiF ì •ì˜ (Body), i <= value ê°€ ì°¸ì¸ ë™ì•ˆ ë°˜ë³µ
+		multi = multi * i; // multiì— i ê°’ ê³±í•˜ê¸°
+		i++; // i ì¦ê°€
 	}
-	return multi; // º¯¼ö multi ¹İÈ¯
+	return multi; // ë³€ìˆ˜ multi ë°˜í™˜
 }
